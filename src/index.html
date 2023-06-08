@@ -1,3 +1,13 @@
+<!--
+File: index.html
+Author: Balázs Réka
+Copyright: 2023, Balázs Réka
+Group: Szoft 1-2-E
+Date: 2023-02-03
+Github: https://github.com/BalazsR2022/medenceviz
+-->
+
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -5,6 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medence Víz számítása</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.js">
 </head>
 <body>
 
@@ -13,7 +25,7 @@
             <div class="indexForm">
                 <div class="mt-3">
                     <label for="height"
-                    class="form-label">Magasság</label>
+                    class="form-label">Magasság (cm)</label>
                     <input type="text"
                     class="form-control"
                     id="height">
@@ -23,7 +35,7 @@
             <div class="indexForm">
                 <div class="mt-3">
                     <label for="width"
-                    class="form-label">Szélesség</label>
+                    class="form-label">Szélesség (cm)</label>
                     <input type="text"
                     class="form-control"
                     id="width">
@@ -33,7 +45,7 @@
             <div class="indexForm">
                 <div class="mt-3">
                     <label for="length"
-                    class="form-label">Hossz</label>
+                    class="form-label">Hossz (cm)</label>
                     <input type="text"
                     class="form-control"
                     id="length">
@@ -44,15 +56,24 @@
                 <button id="calcButton"
                 class="btn btn-primary">Számít</button>
             </div>
+           
             
-                <div class="mt-3">
+                <!--<div class="mt-3">
                     <label for="index"
                     class="form-label"><Index/label>
                     <input type="text"
                     class="form-control"
-                    id="index">
+                    id="volume">
     
             </div>
+
+            <div-- class="mt-3">
+                <input type ="text" class="form-control" id="volume">
+            </div-->
+            <div id="volume" class="container">     
+                <label for="terfogat"> Térfogat (cm<sup>3</sup>)</label>
+                 <input class="form-control" id="volume">
+               </div> 
         </div>
         <script src="bootstrap.js"></script>
         <script src="app.js"></script>

@@ -1,43 +1,12 @@
-const doc = {
-    heightInput: document.querySelector('#height'),
-    widthInput: document.querySelector('#width'),
-    lengthInput: document.querySelector('#length'),
+//File: index.html
+//Author: Balázs Réka
+//Copyright: 2023, Balázs Réka
+//Group: Szoft 1-2-E
+//Date: 2023-06-08
+//Github: https://github.com/BalazsR2022/medenceviz
 
 
-    indexInput: document.querySelector('#index'),
-    calcButton: document.querySelector('#calcButton')
-};
 
-const state = {
-    index : 0
-};
-
-window.addEventListener('load', () => {
-    init();
-});
-
-function init (){
-    if (document.calcButton){
-    doc.calcButton.addEventListener('click', () =>{
-        console.log('működik')
-        startCalc();
-    });
-}
-    //checkInput(30);
-}
-
-function startCalc(){
-    let height = doc.heightInput.value;
-    let width = doc.widthInput.value;
-    let length = doc.lengthInput.value;
-
-    
-
-
-    state.index = calcVolume(height,width,length);
-    doc.indexInput.value = state.index;
-
-}
 
 function calcVolume(height,width,length){
     return (height-10)*width*length;
@@ -59,4 +28,36 @@ function checkInput(input){
    
     
 }
+
+
+const height = document.querySelector('button[value="height"]');
+const width = document.querySelector('button[value="width"]');
+const length = document.querySelector('button[value="length"]');
+gomb.addEventListener('click', szamol);
+
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+});
+
+
+
+function calcVolume(height,width,length){
+    const heigth = document.querySelector('#megadottertek');
+    const width = document.querySelector('#megadottertek');
+    const length = document.querySelector('#megadottertek');
+    const volumeInput = document.querySelector('#volume');
+    volumeInput.value = volume;
+
+
+
+
+    return (height-10)*width*length;
+}
+  
+ 
+
+  
+  
+
 
